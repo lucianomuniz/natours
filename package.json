@@ -4,7 +4,8 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "node-sass sass/main.scss -w css/style.css"
   },
   "author": "Luciano Muniz",
   "license": "ISC",
