@@ -31,7 +31,7 @@
   }
 
   &__caption {
-    @include center-horizontal-vertical;
+    @include absCenter;
     transform: translate(-50%, 20%);
     color: $color-white;
     text-transform: uppercase;

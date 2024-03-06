@@ -74,11 +74,11 @@
 
     &::after {
       content: '';
+      @include absCenter;
       display: block;
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 50%;
-      @include center-horizontal-vertical;
       background-color: $color-primary;
       opacity: 0;
       transition: opacity 0.2s;
