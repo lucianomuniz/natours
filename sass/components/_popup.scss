@@ -21,11 +21,19 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__left {
     width: 33.3333333%;
     display: table-cell;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -33,6 +41,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__img {
@@ -56,6 +69,16 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      -moz-column-count: 1;
+      -moz-column-gap: none;
+      -moz-column-rule: none;
+
+      column-count: 1;
+      column-gap: none;
+      column-rule: none;
+    }
   }
 
   // open states
